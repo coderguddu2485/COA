@@ -1,0 +1,166 @@
+# GDB Debugging Practical
+
+**Course:** Computer Organization and Architecture (COA) Lab
+**Student Name:** Jitarth Singh
+**Branch:** B.Tech CSE
+**Institute:** NIT Delhi
+
+-------------
+
+## 1. Aim
+
+The aim of this experiment is to study and understand the working of the **GNU Debugger (GDB)** and to use it for debugging a C program. The experiment focuses on learning how to execute a program step-by-step, set breakpoints, and inspect variables and memory.
+
+-------------
+
+## 2. Objective
+
+* To understand the concept of debugging in programming
+* To learn how to use GDB commands effectively
+* To analyze program execution line-by-line
+* To inspect variable values and memory addresses
+
+-------------
+
+## 3. Theory
+
+Debugging is the process of identifying and removing errors (bugs) from a program. It is an essential part of software development. Instead of simply running a program, debugging allows us to observe how the program behaves internally.
+
+**GDB (GNU Debugger)** is a powerful debugging tool used in C and C++ programs. It allows programmers to:
+
+* Pause execution at specific points (breakpoints)
+* Execute code step-by-step
+* Inspect variables and memory
+* Track pointer behavior
+* Analyze program flow
+
+### Important GDB Commands:
+
+* `run` → Starts program execution
+* `b <line>` → Sets breakpoint at a specific line
+* `n` → Executes next line
+* `p <variable>` → Prints variable value
+* `info b` → Displays breakpoints
+* `q` → Quit GDB
+
+-------------
+
+## 4. Program Used
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    int *p;
+
+    p = &a;
+
+    printf("Value of a = %d\n", a);
+    printf("Address of a = %p\n", &a);
+
+    return 0;
+}
+```
+
+------------
+
+## 5. Explanation of the Program
+
+* An integer variable `a` is initialized with value 10
+* A pointer `p` is declared
+* The address of `a` is assigned to pointer `p`
+* The program prints:
+
+  * Value of `a`
+  * Address of `a`
+
+This program helps in understanding **pointer behavior and memory addressing**, which can be clearly observed using GDB.
+
+-----------
+
+## 6. Procedure
+
+### Step 1: Compilation with Debug Flag
+
+```bash
+gcc -g p2.c -o test
+```
+
+### Step 2: Start GDB
+
+```bash
+gdb ./test
+```
+
+### Step 3: Set Breakpoints
+
+```bash
+b 4
+b 7
+```
+
+### Step 4: Run the Program
+
+```bash
+run
+```
+
+### Step 5: Execute Line by Line
+
+```bash
+n
+```
+
+### Step 6: Inspect Variables
+
+```bash
+p a
+p p
+p &a
+```
+
+### Step 7: View Breakpoints
+
+```bash
+info b
+```
+
+-----------
+
+## 7. Observations
+
+* At the first breakpoint, the variable `a` is initialized
+* Using `p a`, we can observe the value stored in `a`
+* At the second breakpoint, pointer `p` stores the address of `a`
+* The value of `p` and `&a` are the same, confirming correct pointer assignment
+* GDB allows real-time tracking of variable values and execution flow
+
+-----------
+
+## 8. Result
+
+The program was successfully debugged using GDB. Breakpoints were set, and variable values and memory addresses were observed step-by-step.
+
+-----------
+
+## 9. Conclusion
+
+This experiment provided a clear understanding of:
+
+* The importance of debugging
+* How GDB helps in analyzing program execution
+* The working of pointers and memory addresses
+
+GDB proves to be a very useful tool for detecting errors and understanding program behavior in detail.
+
+-----------
+
+## 10. Learning Outcome
+
+* Learned practical usage of GDB
+* Understood step-by-step program execution
+* Improved knowledge of pointers and memory
+* Gained confidence in debugging C programs
+
+-----------
