@@ -1,0 +1,109 @@
+# Computer Organization and Architecture (COA) Lab
+
+Student Name: Jitarth Singh  
+Roll Number: 241210049  
+Branch: B.Tech Computer Science and Engineering  
+Institute: National Institute of Technology Delhi  
+
+---
+
+## Overview
+
+This repository contains all the experiments and practical work performed in the Computer Organization and Architecture (COA) Lab.
+
+The lab focuses on both:
+
+- Digital Circuit Design using Logisim  
+- Low-Level Programming and Debugging using GDB (GNU Debugger)
+
+It provides hands-on understanding of how hardware components and software instructions interact at a low level.
+
+---
+
+## Tools & Technologies Used
+
+- Logisim – for designing and simulating digital circuits  
+- GDB (GNU Debugger) – for analyzing program execution and addressing modes  
+- C Programming Language – for implementing and testing concepts  
+- Ubuntu/Linux Environment – for compilation and debugging  
+
+---
+
+## Experiments Covered
+
+### 1. Digital Logic Design (Logisim)
+
+The following circuits were designed and simulated:
+
+- Multiplexer (MUX)  
+- Demultiplexer (DEMUX)  
+- Encoder  
+- Decoder  
+- Half Adder  
+- Full Adder  
+- Ripple Carry Adder  
+- 8-bit Shift Register  
+- Arithmetic & Logical Shift Operations  
+- Flip-Flops and Sequential Circuits  
+
+---
+
+### 2. Addressing Modes using GDB
+
+Implementation and analysis of different addressing modes in C using GDB:
+
+- Immediate Addressing Mode  
+- Register Addressing Mode  
+- Direct Addressing Mode  
+- Indirect Addressing Mode  
+- Indexed Addressing Mode  
+
+What was done:
+
+- Wrote C programs demonstrating different addressing styles  
+- Compiled using GCC  
+- Executed and analyzed using GDB  
+- Observed memory addresses and instruction behavior  
+
+---
+
+## Learning Outcomes
+
+- Gained practical knowledge of digital circuit design  
+- Understood how arithmetic and logical operations are implemented in hardware  
+- Learned how different addressing modes work internally  
+- Developed debugging skills using GDB  
+- Connected theoretical concepts with real execution  
+
+---
+
+## How to Run
+
+For Logisim Circuits:
+1. Open Logisim  
+2. Load the .circ file  
+3. Simulate the circuit  
+
+For GDB Programs:
+
+gcc program.c -o program  
+gdb ./program  
+
+---
+
+## Conclusion
+
+This lab provided a strong foundation in both hardware-level design and low-level software execution.
+
+By working with Logisim and GDB, we developed a clear understanding of:
+
+- How digital circuits perform computations  
+- How instructions access memory using different addressing modes  
+
+---
+
+## Author
+
+Jitarth Singh  
+B.Tech CSE, NIT Delhi  
+Roll No: 241210049
